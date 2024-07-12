@@ -1,11 +1,17 @@
+import { Outlet } from 'react-router-dom'
 import './App.css'
-import Home from './components/home'
-import NavBar from './components/navbar'
+
+//components
+import Header from './components/Header'
+import Footer from './components/Footer'
+
+//pages
 
 function App() {
   return <>
-    <NavBar />
-    <Home />
+    <Header />
+    <Outlet />
+    <Footer />
   </>
 }
  
