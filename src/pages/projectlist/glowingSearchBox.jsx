@@ -2,9 +2,9 @@
 
 
 const GlowingSearchBox = () => {
-    return <>
-        glowing search box
-    </>
+    return <div>
+        glowingSearchBox
+    </div>
 }
 
 export default GlowingSearchBox;

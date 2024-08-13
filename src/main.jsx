@@ -9,6 +9,9 @@ import {
 //CSS
 import './index.css'
 
+//component
+import ProjectComponentLoader from './components/ProjectComponentLoader.jsx'
+
 //pages
 import App from './App.jsx'
 import Home from './pages/Home.jsx'
@@ -20,8 +23,10 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<App />}>
       <Route path='' element={<Home />} />
-      <Route path='/projectlist' element={<ProjectList />} />
-      <Route path='/about' element={<About />} />
+      <Route path='about' element={<About />} />
+      <Route path='projectlist' element={<ProjectList />} >
+        <Route path='projectlist/:projectid' element={<ProjectComponentLoader />} />
+      </Route>
     </Route>
 
   )
