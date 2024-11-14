@@ -1,7 +1,7 @@
 
 
 const Footer = () => {
-    return <div>
+    return <div className="h-96 w-screen">
         footer
     </div>
 }
